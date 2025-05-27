@@ -41,9 +41,10 @@ const Header = () => {
   }, [searchParams]);
 
   return (
-    <header className="bg-base-200">
+    <header style={{ backgroundColor: '#ffe6c2' }}>
       <nav
         className="container flex items-center justify-between px-8 py-4 mx-auto"
+        style={{ backgroundColor: '#ffe6c2' }}
         aria-label="Global"
       >
         {/* Your logo/name on large screens */}

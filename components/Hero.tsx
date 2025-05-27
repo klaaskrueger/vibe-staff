@@ -21,8 +21,9 @@ const Hero = () => {
           </svg>
         </a>
 
-        <h1 className="font-extrabold text-4xl lg:text-6xl tracking-tight md:-mb-4">
-          Ship your startup in days, not weeks
+        <h1 className="font-semibold text-4xl lg:text-6xl tracking-tight md:-mb-4 text-[#090d48] max-w-2xl">
+          <span className="gradient-on-light-bg block">Ship your startup in days,</span>
+          not weeks
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
           The NextJS boilerplate with all you need to build your SaaS, AI tool,

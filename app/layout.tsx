@@ -1,12 +1,12 @@
 import { ReactNode } from "react";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { Viewport } from "next";
 import { getSEOTags } from "@/libs/seo";
 import ClientLayout from "@/components/LayoutClient";
 import config from "@/config";
 import "./globals.css";
 
-const font = Inter({ subsets: ["latin"] });
+const font = Montserrat({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
 	// Will use the primary color of your theme to show a nice theme color in the URL bar of supported browsers
@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html
 			lang="en"
-			data-theme={config.colors.theme}
+			data-theme="cmyk-plus"
 			className={font.className}
 		>
 			<body>

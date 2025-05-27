@@ -18,5 +18,33 @@ progress::-webkit-progress-value {
   }
   .btn {
     @apply !capitalize;
+    border-radius: 9999px !important;
   }
 }
+
+.gradient-on-light-bg {
+  background-image: linear-gradient(264deg, #ff9600 18.98%, #cd48fd 61.92%, #006cff 82.91%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  color: #090d48;
+  line-height: 1.2;
+  margin: 0 0 60px;
+  max-width: 40rem;
+}
+h1 {
+  font-size: 48px;
+}
+
+header {
+  background-color: rgba(255, 152, 0, 0.3);
+}
+
+
+
