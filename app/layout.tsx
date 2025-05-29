@@ -5,6 +5,7 @@ import { getSEOTags } from "@/libs/seo";
 import ClientLayout from "@/components/LayoutClient";
 import config from "@/config";
 import "./globals.css";
+import TrackingScripts from "@/components/TrackingScripts";
 
 const font = Montserrat({ subsets: ["latin"] });
 
@@ -26,7 +27,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 			data-theme="cmyk-plus"
 			className={font.className}
 		>
+			<head>
+				<title>{config.appName}</title>
+				<meta name="description" content={config.appDescription} />
+			</head>
 			<body>
+				<TrackingScripts />
 				{/* ClientLayout contains all the client wrappers (Crisp chat support, toast messages, tooltips, etc.) */}
 				<ClientLayout>{children}</ClientLayout>
 			</body>
